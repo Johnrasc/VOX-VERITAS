@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: auto;
+  background-color: var(--web-black);
+}
+
+:root {
+  --font-regular: "Courier-Prime";
+  --font-bold: "Courier-Prime-Bold";
+  --web-black: #231f20;
+  --web-gray: #4a4546;
+  --web-black-semi: #231f20cc;
+  --red-primary: #d11f2f;
+  --red-secondary: #9f1b30;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Courier-Prime";
+  font-weight: normal;
+  src: url(../resources/fonts/courier_prime/CourierPrime-Regular.ttf)
+    format("TrueType");
+}
+
+@font-face {
+  font-family: "Courier-Prime-Bold";
+  font-weight: bold;
+  src: url(../resources/fonts/courier_prime/CourierPrime-Bold.ttf)
+    format("TrueType");
+}
+
+.text-normal{
+  font-family: var(--font-regular);
+}
+
+.text-bolded {
+  font-family: var(--font-bold) !important;
+}
+
+.title-effect {
+  border-top: 0;
+  border-bottom: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+      90deg,
+      transparent,
+      var(--white),
+      var(--white),
+      transparent
+    )
+    1;
+}
+
+.blur-backround {
+  backdrop-filter: blur(8px);
+}
+
+
+
+.sah-load-effect-1 {
+  opacity: 0%;
+}
+.sah-load-effect-2 {
+  opacity: 0%;
+}
+.sah-load-effect-3 {
+  opacity: 0%;
+}
+.sah-load-effect-4 {
+  opacity: 0%;
+}

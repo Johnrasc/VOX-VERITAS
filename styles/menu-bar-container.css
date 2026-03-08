@@ -1,0 +1,138 @@
+@media only screen and (max-width: 600px) {
+  .navigation-button-text {
+    display: none;
+  }
+
+  .navigation-button-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #menu-bar-container #menu-bar {
+    height: 100%;
+    background-color: var(--web-black-semi);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    pointer-events: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation-button-text {
+    display: visible;
+  }
+
+  .navigation-button-image {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+  }
+
+  #menu-bar-container #menu-bar {
+    height: 100%;
+    background-color: var(--web-black-semi);
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
+    pointer-events: auto;
+  }
+}
+
+#menu-bar-container {
+  display: grid;
+  grid-template-rows: 1fr 11fr;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+#menu-bar-container #menu-bar #menubar-navigation-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-button {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 0;
+  align-items: center;
+  background-color: var(--web-black);
+  border-style: solid;
+  border-image: linear-gradient(0deg, var(--white), var(--white), transparent) 1;
+  animation: hover-out 1s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
+}
+
+#menu-bar-container #menu-bar #menu-bar-title {
+  padding: 1.5vmax;
+  align-content: center;
+  height: 100%;
+  display: flex;
+  gap: 0;
+  justify-content: flex-start;
+}
+
+#menu-bar-container #view-space {
+  height: 100%;
+}
+
+.text-regular {
+  font-family: var(--font-regular);
+  font-size: clamp(1rem, 1vmax, 3rem);
+}
+.text-x-large {
+  font-family: var(--font-regular);
+  font-size: clamp(1rem, 1.5vmax, 4rem);
+}
+.text-xx-large {
+  font-family: var(--font-regular);
+  font-size: clamp(1rem, 2.5vmax, 5rem);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-red {
+  color: var(--red-primary);
+}
+
+.navigation-button:hover {
+  animation: hover-in 1s cubic-bezier(0, 1.01, 1, 1) 1 forwards;
+}
+
+#logo-vv {
+  height: clamp(1rem, 2.5vmax, 5rem);
+  object-fit: contain;
+}
+
+@keyframes hover-in {
+  0% {
+    filter: brightness(100%);
+    transform: translateY(0);
+  }
+
+  100% {
+    filter: brightness(150%);
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes hover-out {
+  100% {
+    filter: brightness(100%);
+    transform: translateY(0);
+  }
+
+  0% {
+    filter: brightness(150%);
+    transform: translateY(-4px);
+  }
+}

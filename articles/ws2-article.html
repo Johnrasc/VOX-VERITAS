@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WS2</title>
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png" />
+
+    <link rel="stylesheet" href="../styles/debug.css" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/expose-common-styles.css" />
+    <link rel="stylesheet" href="../styles/menu-bar-container.css" />
+    <link rel="stylesheet" href="../styles/load-effect-begin.css" />
+    <link rel="stylesheet" href="../styles/load-effect.css" defer />
+
+    <script src="../script/site-redirector.js" defer></script>
+    <script src="../script/photo-card-dropper.js" defer></script>
+  </head>
+  <body>
+    <div class="article-background-container flicker-load-effect-1">
+      <video class="video-background-player" autoplay muted loop playsinline>
+        <source src="../resources/dust-bg.webm" type="video/mp4" />
+      </video>
+      <img class="bg-image" src="../resources/general/light-bg.png" alt="" />
+      <img
+        class="bg-image blurry-light"
+        src="../resources/general/light-bg-tp.png"
+        alt=""
+      />
+    </div>
+
+    <div class="wireframe flicker-load-effect-3 article-main-content-container">
+      <div class="article-title-container wireframe">
+        <h1 class="wireframe photojournal-text-xxx text-paragraph">
+          Lost Greatness
+        </h1>
+        <h2 class="photojournal-text-xx wireframe text-paragraph">By ws2</h2>
+      </div>
+
+      <div class="article-photo-container wireframe">
+        <img
+          src="../resources/polaroids/ws2/polaroid-1-rs.png  "
+          alt=""
+          class="photo-card wireframe paper-load-effect-2"
+        />
+        <img
+          src="../resources/polaroids/ws2/polaroid-2-rs.png"
+          alt=""
+          class="photo-card wireframe paper-load-effect-3"
+        />
+      </div>
+
+      <div class="article-text-container wireframe">
+        <p class="text-paragraph photojournal-text-r">
+          The image shows heavy traffic, and on the other side of the lane shows
+          the same traffic but it is counterflowing. Traffic is inevitable, it
+          will happen anyways. It is just the matter on how often it happens and
+          how bad it will get, but here it happens pretty much every day of the
+          week. This would not happen as much if the spending goes to better the
+          public transport, but instead, a lot of it just gets pocketed. This
+          does not just happen with the roads, but even services meant to serve
+          the common folks, This is also one of the reasons why quite a bit of
+          people would do anything just to get their needs and wants, whether if
+          it is the right way or the wrong way.
+        </p>
+
+        <p class="text-paragraph photojournal-text-r">
+          This image shows one of the Philippines' air asset for defense back
+          then. This was used as a means of deterrence and a show of force of
+          the Philippines. The Philippines had it good back then, if anything,
+          we had one of the best airforce in the entire south east asia. As time
+          goes on, those assets go on to become obsolete and outdated, leading
+          to dwindling numbers left. Nowadays, that greatness was the past, and
+          now we are just only catching up. This catching up should not be
+          happening right now, when it could have happened way before. Instead
+          of giving back to the people and the country, "they" give it only to
+          themselves instead.
+        </p>
+      </div>
+    </div>
+
+    <!-- THE TOP MENU BAR THINGY CONTAINER -->
+    <div id="menu-bar-container" class="wireframe fade-load-effect-1">
+      <div id="menu-bar" class="blur-backround title-effect wireframe">
+        <div id="menu-bar-title" class="wireframe">
+          <span
+            class="text-xx-large text-bolded text-red wireframe fade-load-effect-2"
+            >VOX</span
+          >
+          <span
+            class="text-xx-large text-bolded text-white wireframe fade-load-effect-2"
+            >VERITAS</span
+          >
+        </div>
+        <div id="menubar-navigation-container" class="wireframe">
+          <button
+            class="navigation-button text-red text-x-large text-bolded wireframe"
+            onmouseup="redirectToArticle('../index.html')"
+          >
+            <img
+              class="navigation-button-image wireframe"
+              src="../resources/general/home_icon-rs.png"
+              alt=""
+            />
+            <p class="navigation-button-text text-x-large">Home</p>
+          </button>
+          <button
+            class="navigation-button text-red text-x-large text-bolded wireframe"
+            onmouseup="redirectToArticle('../index.html#articles-stack-container')"
+          >
+            <img
+              class="navigation-button-image wireframe"
+              src="../resources/general/article_icon-rs.png"
+              alt=""
+            />
+            <p class="navigation-button-text text-x-large">Articles</p>
+          </button>
+
+          <button
+            class="navigation-button text-red text-x-large text-bolded wireframe"
+            onmouseup="redirectToArticle('../articles/tio-luntiangalon-article/index.html')"
+          >
+            <img
+              class="navigation-button-image wireframe"
+              src="../resources/general/member_icon-rs.png"
+              alt=""
+            />
+            <p class="navigation-button-text text-x-large">Member</p>
+          </button>
+        </div>
+      </div>
+
+      <div id="view-space"></div>
+    </div>
+  </body>
+</html>
